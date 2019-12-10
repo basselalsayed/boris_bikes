@@ -8,5 +8,8 @@ describe DockingStation do
   describe '.working?' do
     it { expect(DockingStation.new().release_bike.working?).to equal(true) }
   end
+  describe '.dock' do
+    it { expect(DockingStation.new().dock(Bike.new())).to be_a(Bike) }
+  end
 end
 
