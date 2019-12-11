@@ -10,7 +10,7 @@ describe DockingStation do
       expect(bike).to be_working
     end
 
-  it "socks a bike" do
+  it "docks a bike" do
     expect(station.dock(Bike.new)).to be_a(Bike)
   end
 
